@@ -1,0 +1,22 @@
+@baseUrl = http://127.0.0.1
+@cType = application/x-www-form-urlencoded
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MzgwODAzMDYsImxldmVsIjoiYXBwbGljYXRpb24iLCJ1c2VybmFtZSI6ImRqYW1icmVkIn0.K-owYigb3SQWp3DM8O_N16gE_6guMh1soP9lePhJ_eg
+
+###
+GET {{baseUrl}}/generate-hash/:qwerty
+
+###
+GET {{baseUrl}}
+
+
+###
+POST {{baseUrl}}/pegawai
+Authorization: Bearer {{token}}
+Content-Type: {{cType}}
+
+nama=tes&alamat=test&telepon=12345
+
+
+### 
+GET {{baseUrl}}/pegawai
+Authorization: Bearer {{token}}
