@@ -2,6 +2,6 @@
     "DB_USERNAME" : "root",
     "DB_PASSWORD" : "p455w0rd",
     "DB_PORT" : "23306",
-    "DB_HOST" : "127.0.0.1",
+    "DB_HOST" : "172.30.6.30",
     "DB_NAME" : "go_echo"
 }

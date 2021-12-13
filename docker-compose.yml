@@ -1,0 +1,16 @@
+version: "3"
+
+services:
+  api-server:
+    container_name: go_api
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - "80:80"
+    volumes:
+      - ./:/app
+    tty: true
+    restart: always
+
+  
