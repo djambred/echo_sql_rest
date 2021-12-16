@@ -1,6 +1,6 @@
 @baseUrl = http://127.0.0.1
 @cType = application/x-www-form-urlencoded
-@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MzgwODAzMDYsImxldmVsIjoiYXBwbGljYXRpb24iLCJ1c2VybmFtZSI6ImRqYW1icmVkIn0.K-owYigb3SQWp3DM8O_N16gE_6guMh1soP9lePhJ_eg
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2Mzk5MjUzNzMsImxldmVsIjoiYXBwbGljYXRpb24iLCJ1c2VybmFtZSI6ImRqYW1icmVkIn0._dcYYTCHFMZMpTbtLbPKcukbsiJ8_8TdSeGAgLySa8Y
 
 ###
 GET {{baseUrl}}/generate-hash/:qwerty
@@ -8,6 +8,11 @@ GET {{baseUrl}}/generate-hash/:qwerty
 ###
 GET {{baseUrl}}
 
+###
+POST {{baseUrl}}/login
+Content-Type: {{cType}}
+
+username=djambred&password=:qwerty
 
 ###
 POST {{baseUrl}}/pegawai
